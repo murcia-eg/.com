@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MURCIA TRADE & SUPPLIES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(180deg, #F7F9FC, #E4ECF4, #D3E1F1);
+      color: #1A1A1A;
+      transition: background 1s ease-in-out;
+    }
+    header {
+      background-color: #1E3A5F;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      transition: background-image 1s ease-in-out;
+    }
+    .hero-content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #1E3A5F;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background-color: #0073B1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+    .cta-button:hover {
+      background-color: #005f91;
+    }
+    footer {
+      background-color: #1E3A5F;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    .language-switcher {
+      position: fixed;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      background: #ffffffcc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 10px;
+      z-index: 1000;
+    }
+    .language-switcher button {
+      display: block;
+      background: none;
+      border: none;
+      margin: 5px 0;
+      padding: 5px 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #1E3A5F;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MURCIA Logo">
+    <nav>
+      <a href="#about">من نحن</a>
+      <a href="#services">الخدمات</a>
+      <a href="#products">المنتجات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <div class="language-switcher">
+    <button onclick="changeLang('ar')">AR</button>
+    <button onclick="changeLang('en')">EN</button>
+  </div>
+
+  <div class="hero" id="hero">
+    <div class="hero-content">
+      <h1>مرحبًا بكم في MURCIA TRADE & SUPPLIES</h1>
+      <p>حلول عالمية للتوكيلات والتعبئة – خبرة 20 عامًا بين يديك</p>
+      <button class="cta-button">تواصل معنا الآن</button>
+    </div>
+  </div>
+
+  <section id="about" class="section">
+    <h2>من نحن</h2>
+    <p>نحن شركة رائدة في السوق المصري والعربي، متخصصة في الوساطة التجارية والتوكيلات، بالإضافة إلى خدمات التعبئة والتغليف، بخبرة مهنية تتجاوز 20 عامًا. نؤمن بقوة الشراكات وبناء علاقات مستدامة مع عملائنا.</p>
+  </section>
+
+  <section id="services" class="section">
+    <h2>الخدمات</h2>
+    <ul>
+      <li>خدمات التوكيلات التجارية داخل وخارج مصر</li>
+      <li>الوساطة التجارية بين المصنعين والموردين</li>
+      <li>حلول التعبئة والتغليف للمنتجات الزراعية والصناعية</li>
+    </ul>
+  </section>
+
+  <section id="products" class="section">
+    <h2>المنتجات</h2>
+    <ul>
+      <li>أكياس تعبئة متعددة الطبقات</li>
+      <li>عبوات كرتونية</li>
+      <li>حلول تغليف متقدمة</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>تواصل معنا</h2>
+    <p>📍 سموحة، الإسكندرية، مصر</p>
+    <p>📞 <a href="tel:0100002174">0100002174</a> - <a href="tel:01000021182">01000021182</a></p>
+    <p>📧 <a href="mailto:murcia.eg@gmail.com">murcia.eg@gmail.com</a></p>
+
+    <form>
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea rows="5" placeholder="رسالتك..." required></textarea>
+      <button type="submit" class="cta-button">أرسل الرسالة</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 MURCIA TRADE & SUPPLIES. جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    const images = ['bg1.jpg', 'bg2.jpg', 'bg3.jpg'];
+    let current = 0;
+    const hero = document.getElementById('hero');
+    function changeBackground() {
+      hero.style.backgroundImage = `url(${images[current]})`;
+      current = (current + 1) % images.length;
+    }
+    setInterval(changeBackground, 5000);
+    changeBackground();
+
+    function changeLang(lang) {
+      alert('تغيير اللغة إلى: ' + lang);
+    }
+  </script>
+</body>
+</html>
